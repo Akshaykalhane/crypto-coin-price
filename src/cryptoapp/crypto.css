@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crypto-container{
+    /* border: 1px solid red; */
+    width: 890px;
+    max-width: 100%;
+    margin: 1em auto;
+    padding: 1.4em;
+    position: relative;
+    top: 0;
+}
+
+.crypto-box{
+    width: 100%;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    align-items: center;
+    /* align-items: center; */
+    /* padding: 0px 1.4em; */
+    /* justify-content:space-between; */
+    /* flex-direction: column; */
+    margin-bottom: 2em;
+}
+
+.crypto-box p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* .crypto-box div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} */
+
+.search-ele{
+    width: 300px;
+    max-width: 100%;
+    /* padding: 20px; */
+    border: 2px solid grey;
+    box-shadow: 0px 0px 10px rgb(53, 32, 32);
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* margin-left: auto; */
+}
+.search-ele label{
+    color: grey;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    transition: all .3s ease-in-out;
+}
+.search-ele input{
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    background-color: #202020;
+    color: grey;
+    font-size: 16px;
+}
+.search-ele input:focus~label,.search-ele input:valid ~ label{
+    /* border: 1px solid red; */
+    /* color: red; */
+    background-color: #202020;
+    top: -12px;
+}
+.cry-img-box{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cry-img-box img{
+    max-width: 40px;
+}
+
+.red-class{
+    color: red !important;
+}
+.green-class{
+    color: green !important;
+}
+
+.crypto-box1{
+    margin-top: 2.6em;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:700px) {
+    p{
+        font-size: 16px !important;
+        /* color: red !important; */
+    }
+    .cry-img-box{
+        flex-direction: column;
+        gap: 1rem;
+        /* display: block; */
+
+    }
+}
